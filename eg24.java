@@ -9,14 +9,16 @@ int number = scanner.nextInt();
 int result = 0;
 int sum = 0;
 int remainder = 0;
-while(number >= 1){
+while(number >= 0){
+if(number == 1) remainder = 1;
+else
 remainder = number % 10;
 sum = sum + remainder;
-number = number / 10;
-if(sum > 9 && number == 1){
+if(sum > 9 && number ){
  number = sum;
  continue;
 }
+number = number / 10;
 }
 System.out.println(sum);
 }

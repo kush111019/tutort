@@ -9,11 +9,11 @@ int number = scanner.nextInt();
 int a = 1;
 int b = 1;
 int c = 0;
-for(int i = 1 ; c == number ;){
+for(int i = 3 ; i <= number ; i++){
 c = a + b;
 a = b;
 b = c;
 }
-System.out.println(c);
+System.out.println("The" + " " + number + " " + "number" + " " + "in the febonecie series is : " + c);
 }
 }
