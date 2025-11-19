@@ -10,9 +10,9 @@ number /= 10;
 }
 return count;
 }
-public static int getDigitMultiplication(int digit , int count){
+public static int getDigitMultiplication(int digit){
 int sum = digit;
-for(int i = 0 ; i < count - 1 ; i++){
+for(int i = 0 ; i < 1 ; i++){
 sum = sum * digit;
 }
 return sum;
@@ -25,14 +25,12 @@ do
 {
 sum = 0;
 while(number > 0){
-count = getCountOfDigits(number);
-sum = sum + getDigitMultiplication(number % 10 , count);
-System.out.println("Here the sum is : " + sum);
+sum = sum + getDigitMultiplication(number % 10);
 number /= 10; 
 }
 number = sum;
-}while(sum != 1);
-System.out.println("The sum is : " + sum);
+count++;
+}while(sum != 1 && count != 500);
 return sum;
 }
 public static void main(String gg[]){
