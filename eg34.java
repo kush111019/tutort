@@ -16,3 +16,5 @@ System.out.println(isUgly(number));
 scanner.close();
 }
 }
+
+// formal message in eg34.java
