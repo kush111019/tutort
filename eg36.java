@@ -14,3 +14,5 @@ System.out.println("g data type is : " + g.getClass().getName());
 System.out.println(g.charAt(4) - '0');
 }
 }
+
+// well done
